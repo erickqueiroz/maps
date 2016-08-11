@@ -38,5 +38,28 @@ class DaoMap{
 		
 		$query = "";
 	}
+	
+	public function getLastMapCoord($user){
+		$data = array();
+		
+		$data[] = $this->conn->cleanData($user->getId());
+		
+		$query = "SELECT latitude, longitude, altitude, time FROM laa_coordinate WHERE id_user = '".$data[0]."' ORDER BY id DESC LIMIT 1 ";
+		
+		$query = $this->conn->removeBreakLine($query);
+		$result = $this->conn->getConn()->query($query);
+		
+		$map = NULL;
+		while($data = $result->fetch_object()){
+			$map = new Map();
+			$map->setId($data->id);
+			$map->setLatitude($data->latitude);
+			$map->setLongitude($data->longitude);
+			$map->setAltitude($data->altitude);
+			break;
+		}
+		$result->free();
+		return($map);
+	}
 
 }
