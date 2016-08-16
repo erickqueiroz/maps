@@ -2,9 +2,9 @@
 	class Database {
 	
 		private $host = 'localhost';
-		private $database = 'ecommerce1';
-		private $user = 'root';
-		private $password = 'root';
+		private $database = 'bullmane_maps';
+		private $user = 'bullmane_maps';
+		private $password = 'maps!@#';
 		private $type = 'mysql';
 		private $port = NULL;
 		

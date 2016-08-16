@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<title>
-			Location API Android - Thiengo [Calopsita]
+			Location API Android
 		</title>
 		
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
@@ -21,7 +21,7 @@
 				</div>
 				<div class="right">
 					<a href="http://www.thiengo.com.br" target="_blank" title="Thiengo [Calopsita]">
-						Thiengo [Calopsita]
+						Maps
 						<i class="fa fa-external-link"></i>
 					</a>
 				</div>
@@ -38,7 +38,7 @@
 				<ul class="menu">
 					<li>
 						<a href="package/ctrl/CtrlMap.php|get-map-content" title="Tracking" class="selected">
-							Tracking
+							Mapear
 						</a>
 					</li>
 					<li>
